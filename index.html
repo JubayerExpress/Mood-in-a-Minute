@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood in a Minute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Mood in a Minute</h1>
+
+    <div class="moods">
+      <button onclick="setMood('😊')">😊</button>
+      <button onclick="setMood('😐')">😐</button>
+      <button onclick="setMood('😢')">😢</button>
+      <button onclick="setMood('😠')">😠</button>
+    </div>
+
+    <p id="selectedMood">No mood selected</p>
+
+    <textarea id="note" placeholder="One sentence about today..."></textarea>
+    <button onclick="saveMood()">Save</button>
+
+    <h3>Last 7 Days</h3>
+    <ul id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
